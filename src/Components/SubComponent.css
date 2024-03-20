@@ -1,0 +1,45 @@
+.Sub-component-container{
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    width: 20%;
+   border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+.Person-details:hover{
+    /* transform: rotate(360deg); */
+    transition: width 2s, height 2s, transform 2s;
+    animation-name: example;
+    animation-duration: 4s;
+
+}
+@keyframes example{
+    from {background-color: rgba(0, 0, 0, 0.19);}
+    to {background-color: yellow}
+  }
+
+.Person-details{
+    background-color: aliceblue;
+    padding: 8px;
+}
+.person{
+    margin-left: 5px;
+}
+
+.clickBtn {
+ display: flex;
+ justify-content: center;
+ margin: 10px 0px 0px 0px;
+ padding: 5px;
+}
+.clickBtn button{
+    height: 30px;
+    width: 60px;
+    color: #00ADEE;
+    background-color: white;
+    border: 1px solid #00ADEE;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
