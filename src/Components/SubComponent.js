@@ -5,13 +5,24 @@ function SubComponent(props) {
   const [middleName, setmiddleName] = useState(props.middleName);
   const [lastName, setLastName] = useState(props.lastName);
   const [age, setAge] = useState(props.age);
+  const [newDetails,setNewDetail] = useState("");
+  
 
   let ClickHandler = () => {
-    setName("Vikas");
-    setmiddleName("Rajendra");
-    setLastName("Pawar");
-    setAge("35");
+      if(newDetails === ''){
+        alert("Please Enter your name");
+        setName(title);
+      }else{
+       setName(newDetails);
+       setmiddleName("Rajendra");
+       setLastName("Pawar");
+       setAge("35");
+      }
   };
+
+  let changeHandler = (event) =>{
+    setNewDetail(event.target.value);
+  }
   return (
     
       <div className="Sub-component-container">
@@ -30,10 +41,12 @@ function SubComponent(props) {
           </p>
         </div>
         <div className="clickBtn">
+           <input type="text" value={newDetails} onChange={ changeHandler }></input>
           <button onClick={ClickHandler}>Click</button>
         </div>
+       
       </div>
-   
+      
   );
 }
 
