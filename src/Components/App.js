@@ -1,7 +1,7 @@
 import "./App.css";
 import SubComponent from "./SubComponent";
 import Card from "./Card";
-import { useState } from "react";
+
 
 function App() {
   let randomInformation = "https://jsonplaceholder.typicode.com/users";
@@ -15,7 +15,10 @@ function App() {
         randomeNames.Age = myData[i].age;
       }
       console.log(randomeNames);
+      
     });
+    
+ 
   let name = "Rajaram";
   let middleName = "Sachin";
   let lastName = "Kadam";

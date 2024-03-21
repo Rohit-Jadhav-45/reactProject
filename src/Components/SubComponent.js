@@ -6,17 +6,19 @@ function SubComponent(props) {
   const [lastName, setLastName] = useState(props.lastName);
   const [age, setAge] = useState(props.age);
   const [newDetails,setNewDetail] = useState("");
+
   
 
-  let ClickHandler = () => {
+  let ClickHandler = () =>{
       if(newDetails === ''){
         alert("Please Enter your name");
         setName(title);
       }else{
        setName(newDetails);
+       setNewDetail("");
        setmiddleName("Rajendra");
        setLastName("Pawar");
-       setAge("35");
+       setAge3("35");
       }
   };
 
@@ -41,7 +43,7 @@ function SubComponent(props) {
           </p>
         </div>
         <div className="clickBtn">
-           <input type="text" value={newDetails} onChange={ changeHandler }></input>
+           <input type="text" id="myInput" value={newDetails} onChange={ changeHandler }></input>
           <button onClick={ClickHandler}>Click</button>
         </div>
        
