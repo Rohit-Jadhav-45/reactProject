@@ -1,0 +1,14 @@
+.individual-Expense,.expense-Form{
+    margin-top: 3%;
+}
+
+.expense-FormContainer input{
+    width: 100%;
+    margin-top: 1%;
+}
+
+.expense-FormButton{
+    margin: 4%;
+    display: flex;
+    justify-content: center;
+}

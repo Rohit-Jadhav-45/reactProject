@@ -1,0 +1,5 @@
+.my-container{
+    display: flex;
+    gap: 8%;
+    margin-left: 1%;
+}

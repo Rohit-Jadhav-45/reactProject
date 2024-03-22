@@ -18,7 +18,7 @@ function SubComponent(props) {
        setNewDetail("");
        setmiddleName("Rajendra");
        setLastName("Pawar");
-       setAge3("35");
+       setAge("35");
       }
   };
 
@@ -28,6 +28,7 @@ function SubComponent(props) {
   return (
     
       <div className="Sub-component-container">
+         <h2 className="mainTitle">Welcome {title} !</h2> 
         <div className="Person-details">
           <p>
             Name:<span className="person">{title}</span>
@@ -45,9 +46,9 @@ function SubComponent(props) {
         <div className="clickBtn">
            <input type="text" id="myInput" value={newDetails} onChange={ changeHandler }></input>
           <button onClick={ClickHandler}>Click</button>
-        </div>
-       
+        </div> 
       </div>
+     
       
   );
 }

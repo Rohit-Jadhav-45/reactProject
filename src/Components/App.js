@@ -1,6 +1,7 @@
 import "./App.css";
 import SubComponent from "./SubComponent";
 import Card from "./Card";
+import ExpenseForm from "./ExpenseForm";
 
 
 function App() {
@@ -25,15 +26,15 @@ function App() {
   let Age = 28;
   return (
     <Card className="my-container">
-      <h2>Welcome {name} !</h2>
       <SubComponent
         name={name}
         middleName={middleName}
         lastName={lastName}
         age={Age}
       />
-      <SubComponent></SubComponent>
+      <ExpenseForm />
     </Card>
+
   );
 }
 
